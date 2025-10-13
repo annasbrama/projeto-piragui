@@ -8,7 +8,6 @@ import { ILogo } from 'src/app/interface/ILogoNavbar';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  // @Input() homeLink!: {route: string};
 
   logoNavbar: ILogo[] = [{
     name: "Logo Projeto Piragui", image: "assets/logo/piragui-logo.png"
