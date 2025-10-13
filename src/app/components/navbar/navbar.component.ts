@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ILogo } from 'src/app/interface/ILogoNavbar';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  // @Input() homeLink!: {route: string};
 
-}
+  logoNavbar: ILogo[] = [{
+    name: "Logo Projeto Piragui", image: "assets/logo/piragui-logo.png"
+  }]
+
+  constructor(private router: Router) { }
+
+  navigateTo(route: string): void {
+    this.router.navigate([route]);
+  }
+} 
