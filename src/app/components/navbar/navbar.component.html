@@ -1,14 +1,21 @@
 <nav>
-    <div class="logo" *ngFor="let option of logoNavbar">
-        <div class="bg-img"></div>
-        <img [src]="option.image" alt="imagem do logo do Projeto Piragui">
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <div class="logo-circle">
+        <img src="../../../assets/logo/piragui-logo.png" alt="Logo do Projeto Piragui" loading="lazy">
+      </div>
+      <div class="logo-text">
+        <span class="project-lower">projeto</span>
+        <span class="project-upper">PIRAGUI</span>
+      </div>
     </div>
-
-    <div class="links-menu">
-        <ul>
-            <li><a href="">Sobre nós</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Como ajudar</a></li>
-        </ul>
-    </div>
+    
+    <ul>
+      <li *ngFor="let link of navLinks" class="nav-item">
+        <a [routerLink]="link.route" class="nav-link" routerLinkActive="active">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>

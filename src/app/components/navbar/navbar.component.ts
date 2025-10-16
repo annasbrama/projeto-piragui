@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ILogo } from 'src/app/interface/ILogoNavbar';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +8,11 @@ import { ILogo } from 'src/app/interface/ILogoNavbar';
 })
 export class NavbarComponent {
 
-  logoNavbar: ILogo[] = [{
-    name: "Logo Projeto Piragui", image: "assets/logo/piragui-logo.png"
-  }]
+  navLinks = [
+    { label: 'SOBRE NÓS', route: '/' },
+    { label: 'PROJETOS', route: '/' },
+    { label: 'COMO AJUDAR', route: '/' }
+  ];
 
   constructor(private router: Router) { }
 
