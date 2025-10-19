@@ -1,6 +1,7 @@
 section {
     background-color: var(--light-green);
     color: var(--white);
+    margin-top: 3.125rem;
 }
 
 .content-container {
@@ -15,13 +16,26 @@ section {
     margin: 1rem 0;
 }
 
-.index-text h1 {
+.help-text, .share-text {
+    margin: 1rem 0;
+}
+
+.index-text h1,
+.help-text h1,
+.donate-text h1,
+.share-text h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
 }
 
 .index-text p,
-.index-text strong {
+.index-text strong,
+.help-text p,
+.help-text strong,
+.donate-text p,
+.donate-text strong,
+.share-text p,
+.share-text strong {
     font-size: 1.35rem;
 }
 
@@ -29,6 +43,36 @@ section {
 .index-img img {
     height: 620px;
     border: 50px var(--dark-yellow) solid;
+}
+
+#como-ajudar {
+    background-color: var(--dark-yellow);
+    margin-top: 5.125rem;
+}
+
+.help-text h4 {
+    color: #1e1e1e;
+    font-weight: 500;
+}
+
+.help-text p:last-child::after,
+.donate-text p:last-child::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    margin: 5.5rem 0;
+    opacity: 0.7;
+}
+
+.share-text a {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+.share-text a:hover{
+    color: var(--light-green);
 }
 
 @media (max-width: 810px) {
@@ -41,5 +85,11 @@ section {
         width: 100%;
         height: auto;
         border: 30px var(--dark-yellow) solid;
+    }
+
+    .help-text p:last-child::after,
+    .donate-text p:last-child::after {
+        margin: 3rem 0;
+        height: 1px;
     }
 }
