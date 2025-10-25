@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,14 +10,25 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
 
   navLinks = [
-    { label: 'SOBRE NÓS', route: '/' },
-    { label: 'PROJETOS', route: '/' },
-    { label: 'COMO AJUDAR', route: '/' }
-  ];
+    { label: "SOBRE NÓS", route: "/about-us-screen", fragment: undefined },
+    { label: "PROJETOS", route: "/campaigns-screen", fragment: undefined },
+    { label: "COMO AJUDAR", route: "/home-screen", fragment: "como-ajudar" },
+  ]
 
-  constructor(private router: Router) { }
+    constructor(
+    public router: Router,
+    private viewportScroller: ViewportScroller,
+  ) {}
 
-  navigateTo(route: string): void {
-    this.router.navigate([route]);
+  navigateTo(route: string, fragment?: string): void {
+    if (fragment) {
+      this.router.navigate([route], { fragment }).then(() => {
+        setTimeout(() => {
+          this.viewportScroller.scrollToAnchor(fragment)
+        }, 100)
+      })
+    } else {
+      this.router.navigate([route])
+    }
   }
 } 

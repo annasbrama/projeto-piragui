@@ -9,13 +9,14 @@
         <span class="project-upper">PIRAGUI</span>
       </div>
     </div>
-    
-    <ul>
-      <li *ngFor="let link of navLinks" class="nav-item">
-        <a [routerLink]="link.route" class="nav-link" routerLinkActive="active">
-          {{ link.label }}
-        </a>
-      </li>
-    </ul>
+  <ul>
+    <li *ngFor="let link of navLinks" class="nav-link">
+      <a (click)="navigateTo(link.route, link.fragment)"
+         [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
+         style="cursor: pointer">
+        {{ link.label }}
+      </a>
+    </li>
+  </ul>
   </div>
 </nav>

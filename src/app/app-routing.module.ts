@@ -6,7 +6,7 @@ import { CampaignsScreenComponent } from './pages/campaigns-screen/campaigns-scr
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home-screen',
     component: HomeScreenComponent,
   }, 
   {
