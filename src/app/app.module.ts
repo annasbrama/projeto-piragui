@@ -8,6 +8,7 @@ import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutUsScreenComponent } from './pages/about-us-screen/about-us-screen.component';
+import { CampaignsScreenComponent } from './pages/campaigns-screen/campaigns-screen.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AboutUsScreenComponent } from './pages/about-us-screen/about-us-screen.
     CarouselComponent,
     FooterComponent,
     AboutUsScreenComponent,
+    CampaignsScreenComponent,
   ],
   imports: [
     BrowserModule,

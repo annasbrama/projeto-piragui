@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
 import { AboutUsScreenComponent } from './pages/about-us-screen/about-us-screen.component';
+import { CampaignsScreenComponent } from './pages/campaigns-screen/campaigns-screen.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'about-us-screen',
     component: AboutUsScreenComponent
+  },
+    {
+    path: 'campaigns-screen',
+    component: CampaignsScreenComponent
   }
 ];
 
