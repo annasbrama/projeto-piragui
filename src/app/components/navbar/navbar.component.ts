@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  isMobileMenuOpen = false;
 
   navLinks = [
     { label: "SOBRE NÓS", route: "/about-us-screen", fragment: undefined },
@@ -15,10 +16,19 @@ export class NavbarComponent {
     { label: "COMO AJUDAR", route: "/home-screen", fragment: "como-ajudar" },
   ]
 
-    constructor(
+  constructor(
     public router: Router,
     private viewportScroller: ViewportScroller,
   ) {}
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    if (this.isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
 
   navigateTo(route: string, fragment?: string): void {
     if (fragment) {
@@ -31,4 +41,9 @@ export class NavbarComponent {
       this.router.navigate([route])
     }
   }
-} 
+
+  navigateToMobile(route: string, fragment?: string): void {
+    this.toggleMobileMenu();
+    this.navigateTo(route, fragment);
+  }
+}
