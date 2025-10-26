@@ -13,7 +13,7 @@ export class NavbarComponent {
   navLinks = [
     { label: "SOBRE NÓS", route: "/about-us-screen", fragment: undefined },
     { label: "PROJETOS", route: "/campaigns-screen", fragment: undefined },
-    { label: "COMO AJUDAR", route: "/home-screen", fragment: "como-ajudar" },
+    { label: "COMO AJUDAR", route: "/", fragment: "como-ajudar" },
   ]
 
   constructor(

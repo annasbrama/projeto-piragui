@@ -28,9 +28,6 @@
   </div>
 
   <div class="mobile-menu-overlay" [class.active]="isMobileMenuOpen">
-    <button class="close-btn" (click)="toggleMobileMenu()" aria-label="Fechar menu">
-      X
-    </button>
     <ul class="mobile-menu">
       <li *ngFor="let link of navLinks" class="mobile-nav-link">
         <a (click)="navigateToMobile(link.route, link.fragment)"

@@ -119,25 +119,6 @@ nav {
     right: 0;
 }
 
-.close-btn {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 2rem;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 0.5rem;
-    line-height: 1;
-    transition: transform 0.2s ease;
-}
-
-.close-btn:hover {
-    transform: scale(1.1);
-}
-
 .mobile-menu {
     list-style: none;
     padding: 0;

@@ -6,17 +6,21 @@ import { CampaignsScreenComponent } from './pages/campaigns-screen/campaigns-scr
 
 const routes: Routes = [
   {
-    path: 'home-screen',
+    path: '',
     component: HomeScreenComponent,
-  }, 
+    pathMatch: "full"
+  },
   {
     path: 'about-us-screen',
     component: AboutUsScreenComponent
   },
-    {
+  {
     path: 'campaigns-screen',
     component: CampaignsScreenComponent
-  }
+  }, {
+    path: "**",
+    redirectTo: "/home-screen",
+  },
 ];
 
 @NgModule({
