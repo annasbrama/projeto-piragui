@@ -8,7 +8,7 @@ nav {
     position: relative;
 }
 
-.navbar-container {
+.content-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 2rem;
@@ -17,13 +17,13 @@ nav {
     align-items: center;
 }
 
-.navbar-logo {
+header {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.logo-circle {
+.logo-circle a {
     width: 92px;
     height: 92px;
     background-color: var(--white);
@@ -150,7 +150,7 @@ nav {
 }
 
 @media (max-width: 810px) {
-    .navbar-container {
+    .content-container {
         padding: 1rem 1.5rem;
     }
 
@@ -162,7 +162,7 @@ nav {
         display: flex;
     }
 
-    .logo-circle {
+    .logo-circle a {
         width: 60px;
         height: 60px;
     }

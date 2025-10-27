@@ -1,20 +1,20 @@
 <nav>
-  <div class="navbar-container">
-    <div class="navbar-logo">
+  <div class="content-container">
+    <header>
       <div class="logo-circle">
-        <img src="../../../assets/logo/piragui-logo.png" alt="Logo do Projeto Piragui" loading="lazy">
+        <a (click)="navigateTo('/')" style="cursor: pointer;">
+          <img src="../../../assets/logo/piragui-logo.png" alt="Logo do Projeto Piragui" loading="lazy"></a>
       </div>
       <div class="logo-text">
         <span class="project-lower">projeto</span>
         <span class="project-upper">PIRAGUI</span>
       </div>
-    </div>
+    </header>
 
     <ul class="desktop-menu">
       <li *ngFor="let link of navLinks" class="nav-link">
         <a (click)="navigateTo(link.route, link.fragment)"
-           [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
-           style="cursor: pointer">
+          [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')" style="cursor: pointer">
           {{ link.label }}
         </a>
       </li>
@@ -31,8 +31,7 @@
     <ul class="mobile-menu">
       <li *ngFor="let link of navLinks" class="mobile-nav-link">
         <a (click)="navigateToMobile(link.route, link.fragment)"
-           [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
-           style="cursor: pointer">
+          [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')" style="cursor: pointer">
           {{ link.label }}
         </a>
       </li>
