@@ -56,8 +56,13 @@
                     A cada nova ação, mais pessoas se unem a essa causa.
                     Nosso sonho é expandir o Piragui, alcançando novas aldeias e fortalecendo o impacto de cada gesto
                     solidário.
-                    Quer participar da próxima ação? <i><a href="">Seja um voluntário!</a></i></p>
-                    <img src="../../../assets/campaigns-screen/natal-2025.png" alt="" loading="lazy" id="campaign-fourth-image">
+                    Quer participar da próxima ação? <i *ngFor="let link of campaignsLink">
+                        <a (click)="navigateTo(link.route, link.fragment)"
+                            [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
+                            style="cursor: pointer">
+                            Seja um voluntário!</a></i></p>
+                <img src="../../../assets/campaigns-screen/natal-2025.png" alt="" loading="lazy"
+                    id="campaign-fourth-image">
             </div>
         </article>
     </div>
