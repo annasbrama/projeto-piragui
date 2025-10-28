@@ -89,7 +89,7 @@ section {
     .index-img img {
         width: 100%;
         height: auto;
-        border: 30px var(--dark-yellow) solid;
+        border: 15px var(--dark-yellow) solid;
     }
 
     .help-text p:last-child::after,

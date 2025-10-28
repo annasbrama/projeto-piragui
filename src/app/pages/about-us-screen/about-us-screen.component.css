@@ -68,11 +68,11 @@ a {
     }
 
     #about-us-first-img {
-        border: 20px var(--red) solid;
+        border: 15px var(--red) solid;
     }
 
     #about-us-second-img {
-        border: 20px var(--light-green) solid;
+        border: 15px var(--light-green) solid;
     }
 
     article p,
