@@ -11,15 +11,15 @@ const routes: Routes = [
     pathMatch: "full"
   },
   {
-    path: 'about-us-screen',
+    path: 'sobre-nos',
     component: AboutUsScreenComponent
   },
   {
-    path: 'campaigns-screen',
+    path: 'projetos',
     component: CampaignsScreenComponent
   }, {
     path: "**",
-    redirectTo: "/home-screen",
+    redirectTo: "/home",
   },
 ];
 

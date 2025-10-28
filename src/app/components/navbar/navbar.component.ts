@@ -11,8 +11,8 @@ export class NavbarComponent {
   isMobileMenuOpen = false;
 
   navLinks = [
-    { label: "SOBRE NÓS", route: "/about-us-screen", fragment: undefined },
-    { label: "PROJETOS", route: "/campaigns-screen", fragment: undefined },
+    { label: "SOBRE NÓS", route: "/sobre-nos", fragment: undefined },
+    { label: "PROJETOS", route: "/projetos", fragment: undefined },
     { label: "COMO AJUDAR", route: "/", fragment: "como-ajudar" },
   ]
 
