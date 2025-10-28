@@ -8,7 +8,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
 article h4 {
@@ -79,9 +79,27 @@ a {
 }
 
 @media (max-width: 810px) {
+    section {
+        margin-top: 0;
+    }
+
+    article h1 {
+        margin-bottom: 0.125rem;
+        font-size: 1.2rem;
+    }
+
+    article h4 {
+        font-size: 0.8rem;
+    }
+
+    .article-content p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
     .article-content {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .article-content img {
@@ -93,23 +111,25 @@ a {
     #campaign-fourth-image {
         align-self: center;
         border: 15px var(--dark-green) solid;
-        max-width: 100%;
+        max-height: 100%;
     }
 
     #campaign-second-image {
+        align-self: center;
         border: 15px var(--light-green) solid;
     }
 
     #campaign-third-image {
+        align-self: center;
         border: 15px var(--middle-green) solid;
     }
 
-    .article-content p {
-        margin: 1rem 0.5rem;
-    }
-
     .line-between {
-        margin: 0.5rem 0;
+        margin: 0.1rem 0;
         height: 1px;
     }
+
+    article:last-child {
+    margin-bottom: 2rem;
+}
 }

@@ -1,4 +1,4 @@
-.footer {
+footer {
     background-color: var(--black);
     border-top: 2px solid var(--white);
     margin-top: 5.125rem;
@@ -34,7 +34,11 @@
     color: var(--dark-yellow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
+    footer {
+        margin-top: 3rem;
+    }
+
     .social-links {
         gap: 1.5rem;
         flex-direction: column;
