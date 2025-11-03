@@ -97,6 +97,20 @@ strong {
     color: var(--white);
 }
 
+.donate-area {
+    background-color: var(--light-green);
+    color: var(--white);
+    margin-top: 5.125rem;
+}
+
+.donate-main h1 {
+    margin-bottom: 2rem;
+}
+
+.donate-main {
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 810px) {
 
     .main-content,
