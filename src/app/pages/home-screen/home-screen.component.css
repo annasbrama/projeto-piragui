@@ -56,7 +56,45 @@ strong {
 
 .donate-text p {
     margin-top: 3.2rem;
-    font-weight: 500;
+}
+
+.infographic-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 4rem;
+    margin-top: 3rem;
+}
+
+.infographic-content section {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.infographic-content section mat-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    color: var(--dark-green);
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.infographic-content section h2 {
+    color: var(--dark-green);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.infographic-content section span {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
 }
 
 @media (max-width: 810px) {
@@ -99,5 +137,31 @@ strong {
     .main-content section p,
     .donate-text p {
         margin-top: 0.5rem;
+    }
+
+    .infographic-content section mat-icon {
+        width: 80px;
+        font-size: 50px;
+        gap: 2rem;
+    }
+
+    .infographic-content section h2 {
+        font-size: 0.9rem;
+    }
+
+    .infographic-content section span {
+        font-size: 1rem;
+        max-width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .infographic-content {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .infographic-content section mat-icon {
+        margin-top: 1.2rem;
     }
 }
