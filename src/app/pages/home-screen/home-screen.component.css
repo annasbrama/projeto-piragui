@@ -1,122 +1,103 @@
-section {
+main {
     background-color: var(--light-green);
     color: var(--white);
     margin-top: 3.125rem;
 }
 
-.content-container {
+.main-content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 5rem;
 }
 
-.index-text,
-.index-img {
-    margin: 1rem 0;
-}
-
-.help-text,
-.share-text {
-    margin: 1rem 0;
-}
-
-.index-text h1,
-.help-text h1,
-.donate-text h1,
-.share-text h1 {
+h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
 }
 
-.index-text p,
-.index-text strong,
-.help-text p,
-.help-text strong,
-.donate-text p,
-.donate-text strong,
-.share-text p,
-.share-text strong {
-    font-size: 1.35rem;
-}
-
-
-.index-img img {
-    height: 620px;
-    border: 50px var(--dark-yellow) solid;
-}
-
-#como-ajudar {
-    background-color: var(--dark-yellow);
-    margin-top: 5.125rem;
-}
-
-.help-text h4 {
+h4 {
     color: #1e1e1e;
     font-weight: 500;
 }
 
-.help-text p:last-child::after,
-.donate-text p:last-child::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--white);
-    margin: 5.5rem 0;
-    opacity: 0.7;
+p,
+strong {
+    font-size: 1rem;
 }
 
-.share-text a {
-    color: var(--dark-green);
-    font-weight: 600;
+.main-content section p {
+    margin-top: 2.5rem;
 }
 
-.share-text a:hover {
-    color: var(--light-green);
+.index-img img,
+.donate-img img {
+    width: 515px;
+    border: 30px var(--dark-yellow) solid;
+}
+
+#como-ajudar {
+    background-color: var(--dark-yellow);
+    color: var(--white);
+    margin-top: 5.125rem;
+}
+
+.donate-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+#volunteers-img {
+    border: 30px var(--dark-green) solid;
+}
+
+.donate-text p {
+    margin-top: 3.2rem;
+    font-weight: 500;
 }
 
 @media (max-width: 810px) {
-    .content-container {
+
+    .main-content,
+    .donate-content {
         flex-direction: column;
         gap: 1rem;
     }
 
-    section {
+    main {
         margin-top: 0;
     }
 
-    .index-img img {
+    .index-img img,
+    .donate-img img {
         width: 100%;
         height: auto;
         border: 15px var(--dark-yellow) solid;
     }
 
-    .help-text p:last-child::after,
-    .donate-text p:last-child::after {
-        margin: 3rem 0;
-        height: 1px;
+    #volunteers-img {
+        border: 15px var(--dark-green) solid;
     }
 
-    .index-text h1,
-    .help-text h1,
-    .donate-text h1,
-    .share-text h1 {
+    h1 {
         font-size: 1.2rem;
     }
 
-    .help-text h4 {
+    h4 {
         font-size: 0.8rem;
     }
 
-    .index-text p,
-    .index-text strong,
-    .help-text p,
-    .help-text strong,
-    .donate-text p,
-    .donate-text strong,
-    .share-text p,
-    .share-text strong {
+    p,
+    strong,
+    em {
         font-size: 1rem;
+    }
+
+    .main-content section p,
+    .donate-text p {
+        margin-top: 0.5rem;
     }
 }

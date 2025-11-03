@@ -2,7 +2,6 @@ footer {
     background-color: var(--black);
     border-top: 2px solid var(--white);
     margin-top: 5.125rem;
-    height: 100%;
 }
 
 .social-links {
