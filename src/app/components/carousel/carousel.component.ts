@@ -12,18 +12,18 @@ export class CarouselComponent {
 
   slides: ICarouselSlides[] = [
     {
-      image: "assets/carousel/header-1.JPG",
-      alt: "Exemplo 1",
+      image: "assets/carousel/header-1.jpeg",
+      alt: "Paisagem do caminho até uma das aldeias.",
       borderColor: "#987F25",
     },
     {
-      image: "assets/carousel/header-2",
-      alt: "Exemplo 1",
+      image: "assets/carousel/header-3.jpeg",
+      alt: "Artesanato de corujas e onça feito pela aldeia.",
       borderColor: "#04502A",
     },
     {
-      image: "assets/carousel/header-3.jpg",
-      alt: "Exemplo 1",
+      image: "assets/carousel/header-2.jpeg",
+      alt: "Visão do lado de fora de uma das aldeias.",
       borderColor: "#B60B0B",
     },
   ]
