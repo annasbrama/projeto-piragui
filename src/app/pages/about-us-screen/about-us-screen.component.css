@@ -8,11 +8,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 5rem;
-}
-
-article {
-    margin: 1rem 0;
+    gap: 2rem;
 }
 
 article h4 {
@@ -27,23 +23,23 @@ article h1 {
 
 article p,
 article strong {
-    font-size: 1.35rem;
+    font-size: 1rem;
 }
 
 #about-us-first-img,
 #about-us-second-img {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 920px;
     width: 100%;
     object-fit: cover;
 }
 
 #about-us-first-img {
-    border: 50px var(--red) solid;
+    border: 30px var(--middle-green) solid;
 }
 
 #about-us-second-img {
-    border: 50px var(--light-green) solid;
+    border: 30px var(--light-green) solid;
 }
 
 a {
@@ -73,11 +69,6 @@ a {
 
     #about-us-second-img {
         border: 15px var(--light-green) solid;
-    }
-
-    article p,
-    article strong {
-        font-size: 1rem;
     }
 
     article h4 {
