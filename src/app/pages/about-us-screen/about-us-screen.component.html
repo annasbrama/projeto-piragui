@@ -42,10 +42,15 @@
             </p>
         </article>
         <img src="../../../assets/about-us-screen/dias-das-criancas-2024.jpeg"
-            alt="Foto de um menino indígena da aldeia sorrindo em uma ação do dias das crianças em outubro de 2024" loading="lazy" id="about-us-second-img">
+            alt="Foto de um menino indígena da aldeia sorrindo em uma ação do dias das crianças em outubro de 2024"
+            loading="lazy" id="about-us-second-img">
         <article>
             <em><strong>“Quando muitas mãos se unem, o impacto se multiplica.”</strong></em>
-            <p>    Esse é o espírito que move o Piragui — e o convite está aberto: <a href="">venha fazer parte dessa história!</a></p>
+            <p> Esse é o espírito que move o Piragui — e o convite está aberto: <i *ngFor="let link of aboutLink">
+                    <a (click)="navigateTo(link.route, link.fragment)"
+                        [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
+                        style="cursor: pointer">
+                        venha fazer parte dessa história!</a></i></p>
         </article>
     </div>
 </section>
