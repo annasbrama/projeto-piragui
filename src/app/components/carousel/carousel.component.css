@@ -44,7 +44,7 @@
 .slide-frame {
     width: 100%;
     height: 100%;
-    border: 50px solid transparent;
+    border: 30px solid transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@
     }
 
     .slide-frame {
-        border: 40px solid transparent;
+        border: 15px solid transparent;
     }
 
     .carousel-arrow {
