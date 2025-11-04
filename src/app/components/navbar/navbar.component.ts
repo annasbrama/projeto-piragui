@@ -11,6 +11,7 @@ export class NavbarComponent {
   isMobileMenuOpen = false;
 
   navLinks = [
+    { label: "INÍCIO", route: "/", fragment: undefined },
     { label: "SOBRE NÓS", route: "/sobre-nos", fragment: undefined },
     { label: "PROJETOS", route: "/projetos", fragment: undefined },
     { label: "COMO AJUDAR", route: "/", fragment: "como-ajudar" },
@@ -19,7 +20,7 @@ export class NavbarComponent {
   constructor(
     public router: Router,
     private viewportScroller: ViewportScroller,
-  ) {}
+  ) { }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
