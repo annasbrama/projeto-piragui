@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <app-carousel></app-carousel>
-<section>
+<section class="campaigns-area">
     <div class="content-container">
         <article>
             <h4>nossas ações e campanhas</h4>
@@ -16,7 +16,7 @@
                     id="campaign-first-image">
             </div>
         </article>
-        <div class="line-between"></div>
+        <span></span>
         <article>
             <h1>Arrecadação de materiais escolares (junho/2025)</h1>
 
@@ -30,7 +30,7 @@
                     id="campaign-second-image">
             </div>
         </article>
-        <div class="line-between"></div>
+        <span></span>
         <article>
             <h1>dia das crianças (outubro/2024)</h1>
             <div class="article-content">
@@ -43,16 +43,19 @@
                     id="campaign-third-image">
             </div>
         </article>
-        <div class="line-between"></div>
-        <article>
-            <h1>Natal solidário (dezembro/2025)</h1>
-            <div class="article-content">
+    </div>
+</section>
+<section class="next-campaigns-area">
+    <div class="content-container">
+        <article class="next-campaigns-main">
+            <section class="next-campaigns-text">
+                <h1>Próxima campanha e novas ações</h1>
                 <p>Neste fim de ano, o Projeto Piragui realizará sua primeira campanha de Natal, levando alegria,
-                    esperança e solidariedade às famílias da aldeia.
+                    esperança e solidariedade às famílias da aldeia. <br>
                     A ação reunirá voluntários e doadores em uma corrente do bem para entregar presentes, alimentos e
-                    mensagens de carinho.
-                    Ainda há tempo para participar e fazer parte dessa celebração especial!
-                    E o trabalho continua...
+                    mensagens de carinho. <br>
+                    Ainda há tempo para participar e fazer parte dessa celebração especial! <br>
+                    E o trabalho continua... <br><br>
                     A cada nova ação, mais pessoas se unem a essa causa.
                     Nosso sonho é expandir o Piragui, alcançando novas aldeias e fortalecendo o impacto de cada gesto
                     solidário.
@@ -61,9 +64,11 @@
                             [class.active]="router.url === link.route || router.url.startsWith(link.route + '#')"
                             style="cursor: pointer">
                             Seja um voluntário!</a></i></p>
+            </section>
+            <figure class="next-campaigns-img">
                 <img src="../../../assets/campaigns-screen/natal-2025.png" alt="" loading="lazy"
-                    id="campaign-fourth-image">
-            </div>
+                    id="next-campaign-image">
+            </figure>
         </article>
     </div>
 </section>
