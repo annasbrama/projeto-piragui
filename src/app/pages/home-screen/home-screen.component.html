@@ -96,8 +96,21 @@
                 equipes durante as ações.
             </p>
             <br><br>
-            <em>Chave PIX: <strong>projetopiragui@gmail.com</strong></em><br><br>
-            <p><em>Ponto de arrecadação física:</em><strong>  Faculdade Unisantos</strong><br>
+            <div class="pix-wrapper">
+                <em>Chave PIX: <span class="pix-container">
+                        <strong class="pix-key" (click)="copyPixKey()" title="Clique para copiar">
+                            projetopiragui@gmail.com
+                        </strong> 
+                        <mat-icon class="copy-icon" (click)="copyPixKey()">content_copy</mat-icon>
+                    </span>
+                </em>
+                <div class="copy-notification" [class.show]="showCopiedNotification">
+                    <mat-icon>check_circle</mat-icon>
+                    <span>Copiado!</span>
+                </div>
+            </div>
+            <br><br>
+            <p><em>Ponto de arrecadação física:</em><strong> Faculdade Unisantos</strong><br>
                 <em>Endereço</em>: Av. Conselheiro Nébias, 296 - Vila Matias, Santos - SP, 11015-003 <br>
                 <em>(avise antes de entregar suas doações para que possamos recebê-las corretamente)</em>
             </p>
@@ -112,7 +125,8 @@
         <article class="partner-main">
             <figure class="partner-img">
                 <img src="../../../assets/home-screen/home-parceria.jpeg"
-                alt="Foto de um dos nossos voluntários com uma criança indígena da aldeia no colo." loading="lazy" id="volunteer-img">
+                    alt="Foto de um dos nossos voluntários com uma criança indígena da aldeia no colo." loading="lazy"
+                    id="volunteer-img">
             </figure>
             <section class="partner-text">
                 <h2>Seja parceiro do projeto</h2>
@@ -122,7 +136,8 @@
                     meio de <strong>doações</strong>, <strong>eventos</strong> ou <strong>serviços</strong>,
                     contribuindo para levar esperança e oportunidades às comunidades indígenas.
                     Cada parceria fortalece nossos projetos e amplia o impacto social, ajudando a transformar vidas de
-                    forma concreta. Se houver interesse em se tornar um parceiro, entre em <strong>contato conosco</strong> e descubra
+                    forma concreta. Se houver interesse em se tornar um parceiro, entre em <strong>contato
+                        conosco</strong> e descubra
                     como participar.
                     <br><br>
                     <em>Juntos, fazemos a diferença.</em>
