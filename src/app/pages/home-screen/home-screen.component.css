@@ -11,7 +11,7 @@ main {
     gap: 5rem;
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
     font-size: 1.8rem;
 }
@@ -28,7 +28,7 @@ strong {
 
 .main-content section,
 .partner-text p,
-.partner-text h1 {
+.partner-text h2 {
     margin-top: 5rem;
 }
 
@@ -108,7 +108,7 @@ strong {
     margin-top: 5.125rem;
 }
 
-.donate-main h1 {
+.donate-main h2 {
     margin-bottom: 2rem;
 }
 
@@ -155,7 +155,7 @@ strong {
         border: 15px var(--light-green) solid;
     }
 
-    h1 {
+    h2 {
         font-size: 1.2rem;
     }
 
@@ -178,7 +178,7 @@ strong {
         margin-top: 0;
     }
 
-    .partner-text h1 {
+    .partner-text h2 {
         margin-top: 1rem;
     }
 
