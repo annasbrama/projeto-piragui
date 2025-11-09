@@ -1,13 +1,14 @@
 import { ViewportScroller } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-campaigns-screen',
   templateUrl: './campaigns-screen.component.html',
   styleUrls: ['./campaigns-screen.component.css']
 })
-export class CampaignsScreenComponent {
+export class CampaignsScreenComponent implements OnInit {
 
   campaignsLink = [
     { route: "/", fragment: "como-ajudar" }
@@ -15,8 +16,12 @@ export class CampaignsScreenComponent {
 
   constructor(
     public router: Router,
-    private viewportScroller: ViewportScroller
-  ) { }
+    private viewportScroller: ViewportScroller, private titleService: Title) { }
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Nossas Ações • Projeto Piragui');
+  }
+
 
   navigateTo(route: string, fragment?: string): void {
     if (fragment) {
