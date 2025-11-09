@@ -8,8 +8,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  /**
+   * Controla o estado de abertura/fechamento do menu mobile.
+   * 
+   * @type {boolean}
+   */
   isMobileMenuOpen = false;
 
+  /**
+   * Array de links de navegação disponíveis na navbar.
+   * 
+   * @type {Array<{label: string, route: string, fragment: string|undefined}>}
+   */
   navLinks = [
     { label: "INÍCIO", route: "/", fragment: undefined },
     { label: "SOBRE NÓS", route: "/sobre-nos", fragment: undefined },
@@ -22,6 +32,11 @@ export class NavbarComponent {
     private viewportScroller: ViewportScroller,
   ) { }
 
+  /**
+   * Alterna o estado do menu mobile e controla o overflow do body para prevenir scroll quando o menu está aberto.
+   * 
+   * @return {void}
+   */
   toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
     if (this.isMobileMenuOpen) {
@@ -31,6 +46,13 @@ export class NavbarComponent {
     }
   }
 
+  /**
+   * Navega para uma rota específica com suporte a fragmentos para scroll.
+   * 
+   * @param {string} route - Rota do destino
+   * @param {string} [fragment] - Fragmento opcional para navegação por âncora
+   * @returns {void}
+   */
   navigateTo(route: string, fragment?: string): void {
     if (fragment) {
       this.router.navigate([route], { fragment }).then(() => {
@@ -43,6 +65,13 @@ export class NavbarComponent {
     }
   }
 
+  /**
+   * Navegação mobile que fecha o menu após a seleção.
+   * 
+   * @param {string} route - Rota do destino
+   * @param {string} [fragment] - Fragmento opcional para navegação por âncora
+   * @returns {void}
+   */
   navigateToMobile(route: string, fragment?: string): void {
     this.toggleMobileMenu();
     this.navigateTo(route, fragment);
