@@ -67,6 +67,7 @@ strong {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem 4rem;
     margin-top: 3rem;
+    padding: 0 8rem;
 }
 
 .infographic-content section {
@@ -186,10 +187,13 @@ strong {
         margin-top: 1rem;
     }
 
+    .infographic-content {
+        padding: 0 1.5rem;
+    }
+
     .infographic-content section mat-icon {
-        width: 80px;
-        font-size: 50px;
-        gap: 2rem;
+        width: 150px;
+        font-size: 55px;
     }
 
     .infographic-content section h2 {
