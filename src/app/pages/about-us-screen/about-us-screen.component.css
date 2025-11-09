@@ -45,6 +45,7 @@ article strong {
 a {
     color: var(--dark-green);
     font-weight: 600;
+    text-decoration: underline;
 }
 
 @media (max-width: 810px) {
