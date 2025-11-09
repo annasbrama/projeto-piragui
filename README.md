@@ -1,27 +1,72 @@
-# ProjetoPiragui
+# Projeto Piragui
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Website do Projeto Piragui - iniciativa solidária que atua junto a comunidades indígenas na Baixada Santista.
 
-## Development server
+**Site:** https://projetopiragui.netlify.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img width="1361" height="620" alt="Captura de tela de 2025-11-09 12-16-50" src="https://github.com/user-attachments/assets/7fd8e9c9-650d-4b27-9903-fa68622771b6" />
 
-## Code scaffolding
+## Sobre o projeto
+Projeto desenvolvido através da matéria ***Criação de Conteúdo Web***, no *primeiro ciclo*, do curso "*Sistemas para Internet*" na faculdade **FATEC Baixada Santista** - Rubens Lara, em que precisavámos ajudar projetos sociais que não tinham espaço na web em forma de website. Tive a oportunidade de participar do desenvolvimento do todo design e também de toda construção do website do **Projeto Piragui**. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias
+- Angular
+- TypeScript
+- CSS3
+- HTML5
+- Angular Material
+- Font Awesome
 
-## Build
+## Componentes Principais
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Navbar Component
+- Navegação responsiva
+- Menu mobile com overlay
+- Links: *Início, Sobre Nós, Projetos, Como Ajudar*
 
-## Running unit tests
+### Carousel Component
+- Slideshow automático (5s)
+- Navegação manual
+- Design responsivo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Home Screen
+- Apresentação do projeto
+- Seção sobre o voluntariado e para parcerias
+- Infográfico interativo
+- Doações com PIX *(com copia e cola sobre a chave)* e posto de entrega
+<img width="1361" height="620" alt="Captura de tela de 2025-11-09 12-19-26" src="https://github.com/user-attachments/assets/25ca350e-d6fc-4df1-b676-97af2fbd2b3c" />
 
-## Running end-to-end tests
+### About Us Screen
+- História do projeto
+- Missão e valores
+- Fotos ilustrativas
+<img width="1361" height="620" alt="Captura de tela de 2025-11-09 12-20-37" src="https://github.com/user-attachments/assets/81322ab6-4824-44d0-96db-6215f80f33b3" />
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Campaigns Screen
+- Campanhas realizadas
+- Próximas ações
+- Chamada para voluntários
+<img width="1361" height="620" alt="Captura de tela de 2025-11-09 12-21-09" src="https://github.com/user-attachments/assets/c33c1c50-541a-4e40-b197-75e446bf546e" />
 
-## Further help
+### Responsividade
+- Breakpoint principal: 810px
+- Mobile-first approach
+- Layout flexível
+<img width="250px" src="https://github.com/user-attachments/assets/17fe5c97-bcd3-449c-ae37-699c16ec274b" />
+<img width="250px" src="https://github.com/user-attachments/assets/ef3cb838-d174-48d6-a49e-f58415e25404" />
+<img width="250px" src="https://github.com/user-attachments/assets/572125ed-d97a-4fa3-a8bb-a833186970f3" />
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Funcionalidades
+- Navegação com fragmentos
+- Copiar chave PIX
+- Carrossel interativo
+- Menu mobile
+- Lazy loading de imagens
+
+## Contato
+- **Email:** projetopiragui@gmail.com
+- **Instagram:** @projetopiragui
+- **LinkedIn:** Projeto Piragui
+- **PIX:** projetopiragui@gmail.com
+
+*Projeto desenvolvido em Angular para promover ações solidárias junto do Projeto Piragui para as comunidades indígenas da Baixada Santista.*
